@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+  {% extends "Apptemp/base.html" %}
+    {% block body_block %}
+    <h1>Welcome to other</h1>
+    <h2>This is an extension of template tags!</h2>
+
+    <a href="{% url 'Apptemp:relative' %}">BACK TO RELATIVE</a>
+    <!-- Have to run migrations for this to work -->
+    <a href="{% url 'admin:index' %}">GO TO ADMIN</a>
+    <a href="{% url 'home' %}">LINK TO INDEX</a>
+
+    {% endblock %}

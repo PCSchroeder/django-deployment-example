@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends "Apptemp/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to relative url templates</h1>
+
+    <a href="{% url 'Apptemp:other' %}">OTHER PAGE</a>
+  {% endblock %}
